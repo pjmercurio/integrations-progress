@@ -34,7 +34,7 @@ def get_template_fields(progress):
     except (TypeError, ValueError):
         pass
 
-    progress_width = 60 if title else 200
+    progress_width = 60 if title else 440
     try:
         progress_width = int(request.args.get("width"))
     except (TypeError, ValueError):
