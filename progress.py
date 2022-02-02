@@ -34,19 +34,37 @@ def get_template_fields(progress):
     except (TypeError, ValueError):
         pass
 
-    progress_width = 60 if title else 440
+    progress_width = 60 if title else 90
     try:
         progress_width = int(request.args.get("width"))
     except (TypeError, ValueError):
         pass
+
+    progress_height = 20
+    try:
+        progress_height = int(request.args.get("height"))
+    except (TypeError, ValueError):
+        pass
+    
+    font_size = 30
+    if progress_height < 20:
+        font_size = 11
+    elif progress_height < 40:
+        font_size = 14
+    elif progress_height < 60:
+        font_size = 16
+    elif progress_height < 100:
+        font_size = 20
 
     return {
         "title": title,
         "title_width": 10 + 6 * len(title) if title else 0,
         "title_color": request.args.get("color", "428bca"),
         "scale": scale,
+        "font_size": font_size,
         "progress": progress,
         "progress_width": progress_width,
+        "progress_height": progress_height,
         "progress_color": get_progress_color(progress, scale),
         "suffix": request.args.get("suffix", "%"),
     }
