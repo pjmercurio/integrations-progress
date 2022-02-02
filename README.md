@@ -1,6 +1,6 @@
 # What is progress-bar?
 
-![Progress](https://ints-progress.herokuapp.com/5/?width=100&height=20)\n
+![Progress](https://ints-progress.herokuapp.com/5/?width=100&height=20)<br>
 https://ints-progress.herokuapp.com/5/?width=100&height=20
 
 
