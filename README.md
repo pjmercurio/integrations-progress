@@ -1,4 +1,4 @@
-# What is progress-bar.dev?
+# What is progress-bar?
 
 ![Progress](https://progress-bar.dev/28/)
 https://progress-bar.dev/28/
