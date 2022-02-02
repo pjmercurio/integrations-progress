@@ -1,27 +1,27 @@
 # What is progress-bar?
 
-![Progress](https://ints-progress.herokuapp.com/28/)
-https://ints-progress.herokuapp.com/28/
+![Progress](https://ints-progress.herokuapp.com/5/?width=200&height=35)
+https://ints-progress.herokuapp.com/5/?width=200&height=35
 
-![Progress](https://ints-progress.herokuapp.com/28/?title=progress)
-https://ints-progress.herokuapp.com/28/?title=progress
 
-![Progress](https://ints-progress.herokuapp.com/58/)
-https://ints-progress.herokuapp.com/58/
+![Progress](https://ints-progress.herokuapp.com/25/?width=200&height=35)
+https://ints-progress.herokuapp.com/25/?width=200&height=35
 
-![Progress](https://ints-progress.herokuapp.com/58/?title=completed)
-https://ints-progress.herokuapp.com/58/?title=completed
 
-![Progress](https://ints-progress.herokuapp.com/91/)
-https://ints-progress.herokuapp.com/91/
+![Progress](https://ints-progress.herokuapp.com/45/?width=200&height=35)
+https://ints-progress.herokuapp.com/45/?width=200&height=35
 
-![Progress](https://ints-progress.herokuapp.com/91/?title=done)
-https://ints-progress.herokuapp.com/91/?title=done
 
-![Progress](https://ints-progress.herokuapp.com/7/?scale=10&title=mark&suffix=X)
-https://ints-progress.herokuapp.com/7/?scale=10&title=mark&suffix=X
+![Progress](https://ints-progress.herokuapp.com/65/?width=200&height=35)
+https://ints-progress.herokuapp.com/65/?width=200&height=35
 
-![Progress](https://ints-progress.herokuapp.com/420/?scale=500&title=funds&width=200&color=babaca&suffix=$)
-https://ints-progress.herokuapp.com/420/?scale=500&title=funds&width=120&color=babaca&suffix=$
+![Progress](https://ints-progress.herokuapp.com/80/?width=200&height=35)
+https://ints-progress.herokuapp.com/80/?width=200&height=35
+
+
+![Progress](https://ints-progress.herokuapp.com/100/?width=200&height=35)
+https://ints-progress.herokuapp.com/100/?width=200&height=35
+
+
 
 Heavily inspired by the works of https://github.com/fehmicansaglam/progressed.io
