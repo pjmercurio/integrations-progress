@@ -75,7 +75,7 @@ def get_progress_svg(progress):
     template_fields = get_template_fields(progress)
 
     template = render_template("progress.svg", **template_fields)
-
+    
     response = make_response(template)
     response.headers["Content-Type"] = "image/svg+xml"
     return response
@@ -87,5 +87,5 @@ def redirect_to_github():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 4444))
     app.run(host="0.0.0.0", port=port)
