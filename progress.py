@@ -12,17 +12,17 @@ def get_progress_color(progress, scale):
     ratio = progress / scale
 
     if ratio < 0.2:
-        return "#AD0000"
+        return ("#ff0000","#AD0000")
     if ratio < 0.4:
-        return "#d8554d"
+        return ("#ff6057", "#c94e47")
     if ratio < 0.6:
-        return "#efad4d"
+        return ("#efad4d", "#b87d28")
     if ratio < 0.8:
-        return "#5bc0de"
+        return ("#5bc0de", "#3d90a8")
     if ratio < 0.9:
-        return "#347ab6"
+        return ("#347ab6", "#19568a")
 
-    return "#5B53FF"
+    return ("#5B53FF", "#0d0785")
 
 
 def get_template_fields(progress):
@@ -56,6 +56,8 @@ def get_template_fields(progress):
     elif progress_height < 100:
         font_size = 20
 
+    color1, color2 = get_progress_color(progress, scale)
+
     return {
         "title": title,
         "title_width": 10 + 6 * len(title) if title else 0,
@@ -65,7 +67,8 @@ def get_template_fields(progress):
         "progress": progress,
         "progress_width": progress_width,
         "progress_height": progress_height,
-        "progress_color": get_progress_color(progress, scale),
+        "progress_color1": color1,
+        "progress_color2": color2,
         "suffix": request.args.get("suffix", "%"),
     }
 
