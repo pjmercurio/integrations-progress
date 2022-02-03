@@ -5,9 +5,20 @@
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
 
+  <linearGradient id="logo-gradient" x1="0" y1="0%" x2="100%" y2="0%" >   
+      <stop offset="5%" stop-color="#5e52ff">
+          <animate attributeName="stop-color" values="#5e52ff; #2c2595; #5e52ff" dur="4s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="50%" stop-color="#2c2595">
+          <animate attributeName="stop-color" values="#2c2595; #5e52ff; #2c2595" dur="4s" repeatCount="indefinite"></animate>
+      </stop>
+  </linearGradient> 
+
   <rect rx="4" x="0" width="{{ title_width + progress_width }}" height="{{ progress_height }}" fill="#{{ title_color }}"/>
   <rect rx="4" x="{{ title_width }}" width="{{ progress_width }}" height="{{ progress_height }}" fill="#555" />
-  <rect rx="4" x="{{ title_width }}" width="{{ [progress/scale, 1] | min * progress_width | int }}" height="{{ progress_height }}" fill="{{ progress_color }}" />
+  <rect rx="4" x="{{ title_width }}" width="{{ [progress/scale, 1] | min * progress_width | int }}" height="{{ progress_height }}" fill="url('#logo-gradient')">
+    <!-- <animate attributeName="fill" values="#347ab6;" dur="5s" repeatCount="indefinite" /> -->
+  </rect>
   {% if title %}
     <path fill="{{ progress_color }}" d="M{{ title_width }} 0h4v20h-4z" />
   {% endif %}
