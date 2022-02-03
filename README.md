@@ -21,7 +21,7 @@ https://ints-progress.herokuapp.com/80/?width=500&height=40
 
 
 ![Progress](https://ints-progress.herokuapp.com/100/?width=600&height=45)<br>
-https://ints-progress.herokuapp.com/100/?width=600&height=45
+https://ints-progress.herokuapp.com/100/?width=650&height=45
 
 
 
